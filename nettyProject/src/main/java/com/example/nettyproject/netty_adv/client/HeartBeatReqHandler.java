@@ -1,8 +1,8 @@
 package com.example.nettyproject.netty_adv.client;
 
-import cn.tuling.nettyadv.vo.MessageType;
-import cn.tuling.nettyadv.vo.MyHeader;
-import cn.tuling.nettyadv.vo.MyMessage;
+import com.example.nettyproject.netty_adv.vo.MessageType;
+import com.example.nettyproject.netty_adv.vo.MyHeader;
+import com.example.nettyproject.netty_adv.vo.MyMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.ReferenceCountUtil;
@@ -26,7 +26,7 @@ public class HeartBeatReqHandler extends ChannelInboundHandlerAdapter {
         MyMessage message = (MyMessage) msg;
         /*是不是握手认证成功的应答*/
         if(message.getMyHeader()!=null
-                &&message.getMyHeader().getType()==MessageType.LOGIN_RESP.value()){
+                &&message.getMyHeader().getType()== MessageType.LOGIN_RESP.value()){
             /*Netty已经提供了定时机制，定时发出心跳请求*/
             heartBeat = ctx.executor().scheduleAtFixedRate(
                     new  HeartBeatReqHandler.HeartBeatTask(ctx),0,

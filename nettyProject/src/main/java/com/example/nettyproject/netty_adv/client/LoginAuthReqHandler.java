@@ -1,8 +1,8 @@
 package com.example.nettyproject.netty_adv.client;
 
-import cn.tuling.nettyadv.vo.MessageType;
-import cn.tuling.nettyadv.vo.MyHeader;
-import cn.tuling.nettyadv.vo.MyMessage;
+import com.example.nettyproject.netty_adv.vo.MessageType;
+import com.example.nettyproject.netty_adv.vo.MyHeader;
+import com.example.nettyproject.netty_adv.vo.MyMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.slf4j.Logger;
