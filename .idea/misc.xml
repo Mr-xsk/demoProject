@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/redisProject/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeperProject/pom.xml" />
         <option value="$PROJECT_DIR$/nettyProject/pom.xml" />
+        <option value="$PROJECT_DIR$/testProject/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmqProject/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmqProject/NewSpringCloudStreamDemo/pom.xml" />
       </list>
     </option>
   </component>

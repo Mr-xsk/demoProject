@@ -7,9 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="BasicDemo" />
+        <module name="nettyProject" />
         <module name="zookeeperProject" />
         <module name="redisProject" />
-        <module name="nettyProject" />
+        <module name="SpringBootDemo" />
+        <module name="SpringCloudStreamDemo" />
+        <module name="testProject" />
+        <module name="NewSpringCloudStreamDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -118,9 +123,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NewSpringCloudStreamDemo" options="" />
       <module name="nettyProject" options="-parameters" />
+      <module name="rabbitmqProject" options="-parameters" />
       <module name="redisProject" options="-parameters" />
       <module name="spring-boot-bank" options="-parameters" />
+      <module name="testProject" options="-parameters" />
       <module name="zookeeperProject" options="-parameters" />
     </option>
   </component>
