@@ -1,7 +1,7 @@
 package com.example.nettyproject.netty_adv;
 
-import cn.tuling.nettyadv.busivo.User;
-import cn.tuling.nettyadv.busivo.UserContact;
+import com.example.nettyproject.netty_adv.busivo.User;
+import com.example.nettyproject.netty_adv.busivo.UserContact;
 
 import java.util.Scanner;
 

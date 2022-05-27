@@ -1,8 +1,8 @@
 package com.example.nettyproject.netty_adv.client;
 
-import cn.tuling.nettyadv.vo.MessageType;
-import cn.tuling.nettyadv.vo.MyHeader;
-import cn.tuling.nettyadv.vo.MyMessage;
+import com.example.nettyproject.netty_adv.vo.MessageType;
+import com.example.nettyproject.netty_adv.vo.MyHeader;
+import com.example.nettyproject.netty_adv.vo.MyMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import org.slf4j.Logger;
@@ -26,7 +26,7 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
         MyMessage message = (MyMessage) msg;
         /*是不是握手成功的应答*/
         if(message.getMyHeader()!=null
-                &&message.getMyHeader().getType()==MessageType.LOGIN_RESP.value()){
+                &&message.getMyHeader().getType()== MessageType.LOGIN_RESP.value()){
             byte loginResult = (byte) message.getBody();
             if (loginResult != (byte) 0) {
                 // 握手失败，关闭连接

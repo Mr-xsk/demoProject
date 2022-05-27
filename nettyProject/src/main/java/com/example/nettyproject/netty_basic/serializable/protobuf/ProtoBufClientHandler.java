@@ -3,10 +3,7 @@ package com.example.nettyproject.netty_basic.serializable.protobuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
-/**
- * @author Mark老师
- * 类说明：
- */
+
 public class ProtoBufClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override

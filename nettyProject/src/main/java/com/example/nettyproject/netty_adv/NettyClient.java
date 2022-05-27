@@ -1,10 +1,10 @@
 package com.example.nettyproject.netty_adv;
 
-import cn.tuling.nettyadv.client.ClientInit;
-import cn.tuling.nettyadv.vo.MessageType;
-import cn.tuling.nettyadv.vo.MyHeader;
-import cn.tuling.nettyadv.vo.MyMessage;
-import cn.tuling.nettyadv.vo.NettyConstant;
+import com.example.nettyproject.netty_adv.client.ClientInit;
+import com.example.nettyproject.netty_adv.vo.MessageType;
+import com.example.nettyproject.netty_adv.vo.MyHeader;
+import com.example.nettyproject.netty_adv.vo.MyMessage;
+import com.example.nettyproject.netty_adv.vo.NettyConstant;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;

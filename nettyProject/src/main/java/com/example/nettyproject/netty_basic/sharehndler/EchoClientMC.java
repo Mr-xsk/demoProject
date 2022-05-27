@@ -1,6 +1,6 @@
 package com.example.nettyproject.netty_basic.sharehndler;
 
-import cn.tuling.nettybasic.NettyConst;
+import com.example.nettyproject.netty_basic.NettyConst;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

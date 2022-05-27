@@ -1,6 +1,5 @@
 package com.example.nettyproject.netty_basic.splicing.demo;
 
-import cn.tuling.nettybasic.echo.EchoClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

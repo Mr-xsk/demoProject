@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/kafkaProject/springbootKafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nettyProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmqProject/NewSpringCloudStreamDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/redisProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testProject/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zookeeperProject/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperProject/zookeeperDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperProject/zookeeperLock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperProject/zookeeperSpringCloudDemo/mall-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperProject/zookeeperSpringCloudDemo/mall-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeperProject/zookeeperSpringCloudDemo/mall-user/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
