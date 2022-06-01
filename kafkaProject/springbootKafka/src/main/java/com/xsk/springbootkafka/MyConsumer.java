@@ -6,8 +6,7 @@ import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Component;
 
 @Component
-public class
-MyConsumer {
+public class MyConsumer {
 
     /**
      * @KafkaListener(groupId = "testGroup", topicPartitions = {

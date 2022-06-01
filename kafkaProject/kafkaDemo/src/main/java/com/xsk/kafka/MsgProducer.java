@@ -12,7 +12,7 @@ import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
 public class MsgProducer {
-    private final static String TOPIC_NAME = "my-replicated-topic2";
+    private final static String TOPIC_NAME = "my-replicated-topic";
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         Properties props = new Properties();

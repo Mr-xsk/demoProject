@@ -15,7 +15,7 @@ public class KafkaController {
 
     @RequestMapping("/send")
     public void send() {
-        kafkaTemplate.send(TOPIC_NAME, 1, "key", "this is a msg");
+        kafkaTemplate.send(TOPIC_NAME, 0, "key", "this is a msg");
     }
 
 }
