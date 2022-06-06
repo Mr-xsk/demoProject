@@ -10,10 +10,14 @@
         <module name="nettyProject" />
         <module name="SpringBootDemo" />
         <module name="zookeeperDemo" />
+        <module name="mall-common" />
+        <module name="rocketmqSpringCloud" />
         <module name="testProject" />
         <module name="NewSpringCloudStreamDemo" />
         <module name="springbootKafka" />
+        <module name="rocketmqSpringBoot" />
         <module name="BasicDemo" />
+        <module name="rocketmqDemo" />
         <module name="mall-user" />
         <module name="redisProject" />
         <module name="SpringCloudStreamDemo" />
@@ -23,7 +27,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="mall-common" target="1.8" />
+      <module name="rocketDemo" target="1.8" />
+      <module name="rocketProject" target="1.8" />
+      <module name="roketmqProject" target="1.8" />
       <module name="spring" target="1.8" />
       <module name="spring-boot-bank" target="1.8" />
       <module name="spring.integration-tests" target="1.8" />
