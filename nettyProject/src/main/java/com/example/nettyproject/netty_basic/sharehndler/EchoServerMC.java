@@ -61,11 +61,6 @@ public class EchoServerMC {
             f.channel().closeFuture().sync();/*阻塞当前线程，直到服务器的ServerChannel被关闭*/
         } finally {
             group.shutdownGracefully().sync();
-
         }
-
-
     }
-
-
 }
