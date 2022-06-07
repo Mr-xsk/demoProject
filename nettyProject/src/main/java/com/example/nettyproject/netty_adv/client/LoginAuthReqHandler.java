@@ -26,7 +26,7 @@ public class LoginAuthReqHandler extends ChannelInboundHandlerAdapter {
         MyMessage message = (MyMessage) msg;
         /*是不是握手成功的应答*/
         if(message.getMyHeader()!=null
-                &&message.getMyHeader().getType()==MessageType.LOGIN_RESP.value()){
+                &&message.getMyHeader().getType()== MessageType.LOGIN_RESP.value()){
             byte loginResult = (byte) message.getBody();
             if (loginResult != (byte) 0) {
                 // 握手失败，关闭连接

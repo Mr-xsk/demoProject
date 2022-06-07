@@ -7,12 +7,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zookeeperProject" />
-        <module name="redisProject" />
         <module name="nettyProject" />
+        <module name="SpringBootDemo" />
+        <module name="zookeeperDemo" />
+        <module name="mall-common" />
+        <module name="rocketmqSpringCloud" />
+        <module name="testProject" />
+        <module name="NewSpringCloudStreamDemo" />
+        <module name="springbootKafka" />
+        <module name="rocketmqSpringBoot" />
+        <module name="BasicDemo" />
+        <module name="rocketmqDemo" />
+        <module name="mall-user" />
+        <module name="redisProject" />
+        <module name="SpringCloudStreamDemo" />
+        <module name="mall-order" />
+        <module name="kafkaDemo" />
+        <module name="zookeeperLock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="rocketDemo" target="1.8" />
+      <module name="rocketProject" target="1.8" />
+      <module name="roketmqProject" target="1.8" />
       <module name="spring" target="1.8" />
       <module name="spring-boot-bank" target="1.8" />
       <module name="spring.integration-tests" target="1.8" />
@@ -114,14 +131,26 @@
       <module name="spring.spring-xsk-ioc.testFixtures" target="1.8" />
       <module name="spring.test" target="1.8" />
       <module name="spring.testFixtures" target="1.8" />
+      <module name="zookeeperSpringCloud" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NewSpringCloudStreamDemo" options="" />
+      <module name="mall-common" options="-parameters" />
+      <module name="mall-order" options="-parameters" />
+      <module name="mall-user" options="-parameters" />
       <module name="nettyProject" options="-parameters" />
+      <module name="rabbitmqProject" options="-parameters" />
       <module name="redisProject" options="-parameters" />
       <module name="spring-boot-bank" options="-parameters" />
+      <module name="springbootKafka" options="-parameters" />
+      <module name="testProject" options="-parameters" />
+      <module name="zookeeperDemo" options="-parameters" />
+      <module name="zookeeperLock" options="-parameters" />
       <module name="zookeeperProject" options="-parameters" />
+      <module name="zookeeperSpringCloud" options="-parameters" />
+      <module name="zookeeperSpringCloudDemo" options="-parameters" />
     </option>
   </component>
 </project>

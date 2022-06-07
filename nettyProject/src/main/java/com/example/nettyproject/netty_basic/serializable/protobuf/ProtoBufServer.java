@@ -11,10 +11,6 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 
-/**
- * @author Mark老师
- * 类说明：
- */
 public class ProtoBufServer {
     public void bind(int port) throws Exception {
         // 配置服务端的NIO线程组

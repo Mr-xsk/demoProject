@@ -5,10 +5,6 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 
 import java.io.IOException;
 
-/**
- * @author Mark老师
- * 类说明：
- */
 public class ProtoBufServerHandler  extends ChannelInboundHandlerAdapter {
 
     @Override

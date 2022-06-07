@@ -1,6 +1,5 @@
 package com.example.nettyproject.netty_http.server.autossl;
 
-import cn.tuling.nettyhttp.server.BusiHandler;
 import com.example.nettyproject.netty_http.server.BusiHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

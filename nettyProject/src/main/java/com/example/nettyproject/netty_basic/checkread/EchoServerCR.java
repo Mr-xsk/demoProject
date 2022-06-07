@@ -1,7 +1,6 @@
 package com.example.nettyproject.netty_basic.checkread;
 
-import cn.tuling.nettybasic.NettyConst;
-import cn.tuling.nettybasic.sharehndler.MessageCountHandler;
+import com.example.nettyproject.netty_basic.NettyConst;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

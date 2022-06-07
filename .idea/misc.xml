@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/redisProject/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeperProject/pom.xml" />
         <option value="$PROJECT_DIR$/nettyProject/pom.xml" />
+        <option value="$PROJECT_DIR$/testProject/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmqProject/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmqProject/NewSpringCloudStreamDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/kafkaProject/pom.xml" />
+        <option value="$PROJECT_DIR$/kafkaProject/springbootKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeperProject/zookeeperSpringCloud/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeperProject/zookeeperSpringCloudDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/roketProject/pom.xml" />
+        <option value="$PROJECT_DIR$/rocketmqProject/pom.xml" />
       </list>
     </option>
   </component>
