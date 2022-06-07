@@ -7,19 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="redisLock" />
         <module name="nettyProject" />
         <module name="SpringBootDemo" />
         <module name="zookeeperDemo" />
+        <module name="redisSentinelCluster" />
         <module name="mall-common" />
         <module name="rocketmqSpringCloud" />
         <module name="testProject" />
         <module name="NewSpringCloudStreamDemo" />
         <module name="springbootKafka" />
+        <module name="redisJedis" />
         <module name="rocketmqSpringBoot" />
         <module name="BasicDemo" />
         <module name="rocketmqDemo" />
+        <module name="redisMultiCache" />
         <module name="mall-user" />
-        <module name="redisProject" />
         <module name="SpringCloudStreamDemo" />
         <module name="mall-order" />
         <module name="kafkaDemo" />
@@ -142,7 +145,11 @@
       <module name="mall-user" options="-parameters" />
       <module name="nettyProject" options="-parameters" />
       <module name="rabbitmqProject" options="-parameters" />
+      <module name="redisJedis" options="-parameters" />
+      <module name="redisLock" options="-parameters" />
+      <module name="redisMultiCache" options="-parameters" />
       <module name="redisProject" options="-parameters" />
+      <module name="redisSentinelCluster" options="-parameters" />
       <module name="spring-boot-bank" options="-parameters" />
       <module name="springbootKafka" options="-parameters" />
       <module name="testProject" options="-parameters" />

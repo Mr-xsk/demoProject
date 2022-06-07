@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>rocketmqDemo</module>
         <module>rocketmqSpringBoot</module>
         <module>rocketmqSpringCloud</module>
-        <module>rocketmqDemo</module>
     </modules>
 
     <properties>

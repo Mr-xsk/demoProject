@@ -37,13 +37,26 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * The type Transaction producer.
+ */
 public class TransactionProducer {
     private static final long START_TIME = System.currentTimeMillis();
     private static final AtomicLong MSG_COUNT = new AtomicLong(0);
 
-    //broker max check times should less than this value
+    /**
+     * The constant MAX_CHECK_RESULT_IN_MSG.
+     */
+//broker max check times should less than this value
     static final int MAX_CHECK_RESULT_IN_MSG = 20;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws MQClientException            the mq client exception
+     * @throws UnsupportedEncodingException the unsupported encoding exception
+     */
     public static void main(String[] args) throws MQClientException, UnsupportedEncodingException {
         Options options = ServerUtil.buildCommandlineOptions(new Options());
         CommandLine commandLine = ServerUtil.parseCmdLine("TransactionProducer", args, buildCommandlineOptions(options), new PosixParser());
@@ -202,6 +215,12 @@ public class TransactionProducer {
         return msg;
     }
 
+    /**
+     * Build commandline options options.
+     *
+     * @param options the options
+     * @return the options
+     */
     public static Options buildCommandlineOptions(final Options options) {
         Option opt = new Option("w", "threadCount", true, "Thread count, Default: 32");
         opt.setRequired(false);
@@ -243,6 +262,9 @@ public class TransactionProducer {
     }
 }
 
+/**
+ * The type Transaction listener.
+ */
 class TransactionListenerImpl implements TransactionListener {
     private StatsBenchmarkTProducer statBenchmark;
     private TxSendConfig sendConfig;
@@ -255,6 +277,12 @@ class TransactionListenerImpl implements TransactionListener {
         List<LocalTransactionState> checkResult;
     }
 
+    /**
+     * Instantiates a new Transaction listener.
+     *
+     * @param statsBenchmark the stats benchmark
+     * @param sendConfig     the send config
+     */
     public TransactionListenerImpl(StatsBenchmarkTProducer statsBenchmark, TxSendConfig sendConfig) {
         this.statBenchmark = statsBenchmark;
         this.sendConfig = sendConfig;
@@ -336,24 +364,55 @@ class TransactionListenerImpl implements TransactionListener {
     }
 }
 
+
+/**
+ * The type Snapshot.
+ */
 class Snapshot {
+    /**
+     * The End time.
+     */
     long endTime;
 
+    /**
+     * The Send request success count.
+     */
     long sendRequestSuccessCount;
 
+    /**
+     * The Send request failed count.
+     */
     long sendRequestFailedCount;
 
+    /**
+     * The Send message time total.
+     */
     long sendMessageTimeTotal;
 
+    /**
+     * The Send message max rt.
+     */
     long sendMessageMaxRT;
 
+    /**
+     * The Check count.
+     */
     long checkCount;
 
+    /**
+     * The Unexpected check count.
+     */
     long unexpectedCheckCount;
 
+    /**
+     * The Duplicated check.
+     */
     long duplicatedCheck;
 }
 
+/**
+ * The type Stats benchmark t producer.
+ */
 class StatsBenchmarkTProducer {
     private final AtomicLong sendRequestSuccessCount = new AtomicLong(0L);
 
@@ -369,6 +428,11 @@ class StatsBenchmarkTProducer {
 
     private final AtomicLong duplicatedCheckCount = new AtomicLong(0);
 
+    /**
+     * Create snapshot snapshot.
+     *
+     * @return the snapshot
+     */
     public Snapshot createSnapshot() {
         Snapshot s = new Snapshot();
         s.endTime = System.currentTimeMillis();
@@ -411,6 +475,9 @@ class StatsBenchmarkTProducer {
     }
 }
 
+/**
+ * The type Tx send config.
+ */
 class TxSendConfig {
     String topic;
     int threadCount;
@@ -423,6 +490,12 @@ class TxSendConfig {
     int sendInterval;
 }
 
+/**
+ * The type Lru map.
+ *
+ * @param <K> the type parameter
+ * @param <V> the type parameter
+ */
 class LRUMap<K, V> extends LinkedHashMap<K, V> {
 
     private int maxSize;

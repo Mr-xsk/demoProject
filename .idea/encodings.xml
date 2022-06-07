@@ -6,7 +6,12 @@
     <file url="file://$PROJECT_DIR$/kafkaProject/springbootKafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nettyProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rabbitmqProject/NewSpringCloudStreamDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisProject/redisJedis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisProject/redisLock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisProject/redisMultiCache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisProject/redisSentinelCluster/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/redisProject/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redisProject/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/testProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeperProject/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zookeeperProject/src/main/resources" charset="UTF-8" />

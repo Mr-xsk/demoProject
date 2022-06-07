@@ -1,7 +1,6 @@
 package com.xsk.zookeeper.client.balance;
 
-import com.alibaba.fastjson.JSONObject;
-import com.tuling.zk_demo.util.JsonUtil;
+import com.xsk.zookeeper.bean.JsonUtil;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
